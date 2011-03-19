@@ -1,4 +1,6 @@
 CoastApp::Application.routes.draw do
+  get "users/new"
+
   get "pages/home"
   
   get "pages/about"
@@ -70,6 +72,7 @@ match '/about',   :to => 'pages#about'
 match '/terms',    :to => 'pages#terms'
 match '/help',    :to => 'pages#help'
 match '/contact', :to => 'pages#contact'
+match '/signup',  :to => 'users#new'
 
 
   # See how all your routes lay out with "rake routes"
