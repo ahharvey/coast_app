@@ -64,7 +64,13 @@ CoastApp::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-root :to => "home#index"
+root :to => "pages#home"
+
+match '/about',   :to => 'pages#about'
+match '/terms',    :to => 'pages#terms'
+match '/help',    :to => 'pages#help'
+match '/contact', :to => 'pages#contact'
+
 
   # See how all your routes lay out with "rake routes"
 
