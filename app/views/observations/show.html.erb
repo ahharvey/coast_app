@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Species:</b>
+  <%= @observation.species %>
+</p>
+
+<p>
+  <b>Weight:</b>
+  <%= @observation.weight %>
+</p>
+
+<p>
+  <b>Length:</b>
+  <%= @observation.length %>
+</p>
+
+<p>
+  <b>Site:</b>
+  <%= @observation.site_id %>
+</p>
+
+<p>
+  <b>User:</b>
+  <%= @observation.user_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_observation_path(@observation) %> |
+<%= link_to 'Back', observations_path %>
